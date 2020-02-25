@@ -10,8 +10,8 @@
         <router-link to='/' class='btn grey'>Back</router-link>
         <button @click="deleteAlumno" class='btn red'>Borrar</button>
          <div class="fixed-action-btn">
-            <router-link v-bind:to="{name:'edit'}" class="btn-floating btn-large blue">
-            <i class="fa fa-plus"></i>
+            <router-link v-bind:to="{name:'editar-alumno', params:{employee_id:alumno_id, }}" class="btn-floating btn-large blue">
+            <i class="fa fa-pencil"></i>
 
             </router-link>
         </div>
