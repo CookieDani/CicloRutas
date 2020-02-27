@@ -1,10 +1,10 @@
 export default {
-    apiKey: "AIzaSyCxDS1ihNm0ooDZbJJM5zxj3StUNCpIVSM",
-    authDomain: "ciclo-rutas.firebaseapp.com",
-    databaseURL: "https://ciclo-rutas.firebaseio.com",
-    projectId: "ciclo-rutas",
-    storageBucket: "ciclo-rutas.appspot.com",
-    messagingSenderId: "1080999011919",
-    appId: "1:1080999011919:web:8b314c098d0c7820f22c3a",
-    measurementId: "G-MYL7CQBGLP"
+    apiKey: "AIzaSyDzLgV_J5yLDDIdAQlz82z8VnDuNFcmpQA",
+    authDomain: "proyecto-ciclo-rutas.firebaseapp.com",
+    databaseURL: "https://proyecto-ciclo-rutas.firebaseio.com",
+    projectId: "proyecto-ciclo-rutas",
+    storageBucket: "proyecto-ciclo-rutas.appspot.com",
+    messagingSenderId: "323761477514",
+    appId: "1:323761477514:web:cc559f81529aa366a8da73",
+    measurementId: "G-V2GFE754LC"
 }
