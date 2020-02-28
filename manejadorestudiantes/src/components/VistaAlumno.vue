@@ -1,24 +1,22 @@
 <template>
-    <div id='vista-alumno'> 
+    <div id='vista-alumno' style="font-family:'Lora';" > 
         <ul class="collection with-header">
             <li class="collection-header"><h4>{{nombres}}</h4></li>
-            <li class="collection-item">Cedula: {{alumno_id}}</li>
-            <li class="collection-item">Correo: {{correo}}</li>
-            <li class="collection-item">Número contacto: {{numero_contacto}}</li>
-            <li class="collection-item">Días a la semana: {{numero_dias}}</li>
-            <li v-if="pagado" class="collection-item">Pagado: <i v-if="pagado" class=" material-icons">check</i>
+            <li class="collection-item"><b>Cédula: </b>{{alumno_id}}</li>
+            <li class="collection-item"><b>Correo</b> {{correo}}</li>
+            <li class="collection-item"><b>Número contacto:</b> {{numero_contacto}}</li>
+            <li class="collection-item"><b>Días a la semana:</b> {{numero_dias}}</li>
+            <li v-if="pagado" class="collection-item"><b>Pagado:</b> <i v-if="pagado" class=" material-icons">check</i>
               <i v-if="!pagado"  class="material-icons">close</i> </li>
-       
-             
-            <li class="collection-item">Fecha fin: {{fecha_fin}}</li>
-            <li class="collection-item">Fecha inicio: {{fecha_inicio}}</li>
-            <li class="collection-item">Nombre tutor: {{nombres_tutor}}</li>
-            <li class="collection-item">Horario 1: {{horario1}}</li>
-            <li class="collection-item">Horario 2: {{horario2}}</li>
+            <li class="collection-item"><b>Fecha fin:</b> {{fecha_fin}}</li>
+            <li class="collection-item"><b>Fecha inicio:</b> {{fecha_inicio}}</li>
+            <li class="collection-item"><b>Nombre tutor:</b> {{nombres_tutor}}</li>
+            <li class="collection-item"><b>Horario 1:</b> {{horario1}}</li>
+            <li class="collection-item"><b>Horario 2:</b> {{horario2}}</li>
         
         </ul>
-        <router-link to='/' class='btn grey'>Atras</router-link>
-        <button @click="deleteAlumno" class='btn red'>Borrar</button>
+        <router-link to='/' class='btn black' style="font-family:'Permanent Marker';" >Atras</router-link>
+        <button @click="deleteAlumno" class='btn red' style="font-family:'Permanent Marker';" >Borrar</button>
          <div class="fixed-action-btn">
             <router-link v-bind:to="{name:'editar-alumno', params:{employee_id:alumno_id, }}" class="btn-floating btn-large blue">
             <i class="fa fa-pencil"></i>

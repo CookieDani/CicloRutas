@@ -1,7 +1,7 @@
 <template>
-    <div id='editar-alumno'> 
+    <div id='editar-alumno'  style="font-family:'Lora';"> 
         <h3>Editar alumno</h3>
-        <div class="row">
+        <div class="row" >
             <form @submit.prevent="actualizarAlumno" class="col s12">
                 <div class="row">
                 <div class="input-field col s12">
@@ -69,14 +69,15 @@
             </div>
             <div class="row">
                 <div class="input-field col s12">
-                    <input type="checkbox" id="pagado" v-model="pagado" required >
+                    <input type="checkbox" id="pagado" v-model="pagado" >
                     <label for="pagado">{{ pagado }}</label>
                     <label class="active">Pagado</label>
                 </div>
             </div>
            <br>
-            <button type="submit" class="btn">Editar</button>
-            <router-link to='/' class="btn grey">Atras</router-link>
+            <router-link to='/'  style="font-family:'Permanent Marker';" class="btn black">Atras</router-link>
+            <button type="submit"  style="font-family:'Permanent Marker';" class="btn">Editar</button>
+            
             </form>
             
         </div>

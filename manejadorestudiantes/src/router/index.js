@@ -4,6 +4,7 @@ import Dashboard from '@/components/Dashboard'
 import NuevoAlumno from '@/components/NuevoAlumno'
 import VistaAlumno from '@/components/VistaAlumno'
 import EditarAlumno from '@/components/EditarAlumno'
+import Dashboard_Profesor from '@/components/DashboardProfesor'
 import Login from '@/components/Login'
 import firebase from "firebase"
 Vue.use(Router)
@@ -15,6 +16,14 @@ let router =  new Router({
       path: '/',
       name: 'dashboard',
       component: Dashboard,
+      meta: {
+        requiresAuth: true
+      }
+    },
+    {
+      path: '/profesores/',
+      name: 'dashboard_profesor',
+      component: Dashboard_Profesor,
       meta: {
         requiresAuth: true
       }
@@ -46,6 +55,29 @@ let router =  new Router({
     {
       path: '/:alumno_id',
       name: 'vista-alumno',
+      component: VistaAlumno,
+      meta: {
+        requiresAuth: true
+      }
+    },,{
+      path: '/profesores/new',
+      name: 'nuevo-profesor',
+      component: NuevoAlumno,
+      meta: {
+        requiresAuth: true
+      }
+    },
+    {
+      path: '/profesores/edit/:profesor_id',
+      name: 'editar-profesor',
+      component: EditarAlumno,
+      meta: {
+        requiresAuth: true
+      }
+    },
+    {
+      path: '/profesores/:profesor_id',
+      name: 'vista-profesor',
       component: VistaAlumno,
       meta: {
         requiresAuth: true

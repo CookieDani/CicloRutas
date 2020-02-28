@@ -5,6 +5,8 @@ import App from './App'
 import router from './router'
 import firebase from 'firebase'
 import './components/firebaseInit'
+import 'materialize-css/dist/css/materialize.min.css'
+import 'material-design-icons/iconfont/material-icons.css'
 Vue.config.productionTip = false
 
 let app;
